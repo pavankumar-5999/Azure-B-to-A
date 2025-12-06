@@ -91,141 +91,144 @@ Tracks performance, logs, and alerts for all Azure resources.
 ### 38. Azure Active Directory (Azure AD) - Entra ID  
 Cloud identity service used for user login, authentication, and access control.  
   
-##  Services   1. What is a VNet?  
- A **Virtual Network (VNet)** is a logically isolated network in Azure where you can deploy your Azure resources like VMs, databases, and web apps. It’s like your own private network in the cloud.  
+##  Services   
+###1. What is a VNet?  
+ A Virtual Network (VNet) is a logically isolated network in Azure where you can deploy your Azure resources like VMs, databases, and web apps. It’s like your own private network in the cloud.  
   
-**Purpose:**  
+Purpose:
 * Provides isolation and segmentation.  
 * Enables secure communication between Azure resources.  
 * Supports hybrid connections with on-premises networks.  
   
-**Example:**  
+Example:  
 You can create a VNet VNet1 with an address space 10.0.0.0/16 to host multiple VMs and Azure services that need to communicate privately.  
   
-**2. What are Subnets, and Why do we need them?**  
- A **Subnet** is a range of IP addresses within a VNet. It helps divide the network into smaller, manageable segments.  
+###2. What are Subnets, and Why do we need them?**  
+ A Subnet is a range of IP addresses within a VNet. It helps divide the network into smaller, manageable segments.  
   
-**Purpose:**  
-* Organizes resources logically.  
-* Implements security boundaries with NSGs.  
-* Efficient IP address management.  
+Purpose:
+ Organizes resources logically.  
+ Implements security boundaries with NSGs.  
+ Efficient IP address management.  
   
-**Example:** In VNet1 (10.0.0.0/16):  
-* Subnet1: 10.0.1.0/24 for web servers  
-* Subnet2: 10.0.2.0/24 for database servers  
+Example: In VNet1 (10.0.0.0/16):  
+Subnet1: 10.0.1.0/24 for web servers  
+Subnet2: 10.0.2.0/24 for database servers  
   
-**3. What is Network Security Group (NSG)? When do you use it?**  
+###3. What is Network Security Group (NSG)? When do you use it?**  
  A **Network Security Group (NSG)** is a firewall that controls inbound and outbound traffic to resources in a subnet or network interface.  
   
-**Purpose:**  
-* Restricts unauthorized access.  
-* Applies rules at subnet or VM level.  
+Purpose:
+Restricts unauthorized access.  
+Applies rules at subnet or VM level.  
   
-**When to use NSG:**  
-* When you want to allow only specific traffic (like HTTP/HTTPS to web servers).  
-* To block unwanted inbound or outbound connections.  
+##When to use NSG:
+When you want to allow only specific traffic (like HTTP/HTTPS to web servers).  
+To block unwanted inbound or outbound connections.  
   
-**Example:** NSG WebNSG allows inbound 80/443 and denies all other inbound traffic for a web server subnet.  
+Example: NSG WebNSG allows inbound 80/443 and denies all other inbound traffic for a web server subnet.  
   
-**4. What is Application Security Group (ASG)? When do you prefer ASG?**  
- An **Application Security Group (ASG)** allows grouping of VMs with similar workloads to simplify NSG rules.  
+###4. What is Application Security Group (ASG)? When do you prefer ASG?**  
+ An Application Security Group (ASG) allows grouping of VMs with similar workloads to simplify NSG rules.  
   
-**Purpose:**  
-* Makes NSG rules dynamic and easier to manage.  
-* Allows you to apply security policies based on application role rather than IP addresses.  
+Purpose:  
+Makes NSG rules dynamic and easier to manage.  
+Allows you to apply security policies based on application role rather than IP addresses.  
   
-**When to use ASG:**  
-* In large deployments where VMs frequently scale or change.  
-* When you want rules like "allow traffic from Web-ASG to DB-ASG".  
+When to use ASG:
+In large deployments where VMs frequently scale or change.  
+When you want rules like "allow traffic from Web-ASG to DB-ASG".  
   
-**Example:**  
-* Web-ASG → all web servers  
-* DB-ASG → all database servers NSG rule: Allow traffic from Web-ASG to DB-ASG on port 1433.  
+Example:
+Web-ASG → all web servers  
+DB-ASG → all database servers NSG rule: Allow traffic from Web-ASG to DB-ASG on port 1433.  
   
-**5. What is VNet Peering?**  
- **VNet Peering** connects two VNets privately in Azure, allowing resources in each VNet to communicate without using public IPs.  
+###5. What is VNet Peering?
+ VNet Peering connects two VNets privately in Azure, allowing resources in each VNet to communicate without using public IPs.  
   
-**Purpose:**  
-* Enables seamless cross-VNet communication.  
-* Low latency, high bandwidth connection.  
+Purpose:
+Enables seamless cross-VNet communication.  
+Low latency, high bandwidth connection.  
   
-**Example:** VNet VNet1 (10.0.0.0/16) peered with VNet2 (10.1.0.0/16) allows a VM in VNet1 to access a database in VNet2 privately.  
+Example: VNet VNet1 (10.0.0.0/16) peered with VNet2 (10.1.0.0/16) allows a VM in VNet1 to access a database in VNet2 privately.  
   
-**6. What is Public IP?**  
- A **Public IP** is an IP address accessible from the internet.  
+###6. What is Public IP?**  
+ A Public IP is an IP address accessible from the internet.  
   
-**Purpose:**  
-* Makes Azure resources (VMs, Load Balancers, etc.) reachable from outside.  
+Purpose:
+Makes Azure resources (VMs, Load Balancers, etc.) reachable from outside.  
   
-**Example:** A web server VM with public IP 52.172.12.34 can be accessed from a browser.  
+Example: A web server VM with public IP 52.172.12.34 can be accessed from a browser.  
   
-**7. What is Private IP?**  
- A **Private IP** is an IP address used for internal communication within a VNet or between VNets.  
+###7. What is Private IP?**  
+ A Private IP is an IP address used for internal communication within a VNet or between VNets.  
   
-**Purpose:**  
-* Ensures internal resources communicate privately.  
-* Not accessible directly from the internet.  
+Purpose:
+Ensures internal resources communicate privately.  
+Not accessible directly from the internet.  
   
-**Example:** VM1 in Subnet1 has private IP 10.0.1.4 and VM2 in the same VNet can access it via this IP.  
+Example: VM1 in Subnet1 has private IP 10.0.1.4 and VM2 in the same VNet can access it via this IP.  
   
-**8. What are Outbound Rules?**  
- **Outbound rules** define how traffic leaves a resource, subnet, or network interface to external destinations.  
+###8. What are Outbound Rules?
+ Outbound rules define how traffic leaves a resource, subnet, or network interface to external destinations.  
   
-**Purpose:**  
-* Control which destinations a VM or subnet can connect to.  
-* Implement security for outbound traffic.  
+Purpose: 
+Control which destinations a VM or subnet can connect to.  
+Implement security for outbound traffic.  
   
-**Example:**  
-* NSG outbound rule: Allow traffic from Subnet1 to 0.0.0.0/0 on port 443 (HTTPS).  
-* Restrict all other outbound traffic.  
-##  9. Bastion  
- **Azure Bastion** is a fully managed service that provides **secure and seamless RDP/SSH connectivity** to virtual machines directly through the Azure portal **without exposing public IP addresses**.  
+Example:
+NSG outbound rule: Allow traffic from Subnet1 to 0.0.0.0/0 on port 443 (HTTPS).  
+Restrict all other outbound traffic. 
+
+###9. Bastion  
+ Azure Bastion is a fully managed service that provides **secure and seamless RDP/SSH connectivity** to virtual machines directly through the Azure portal **without exposing public IP addresses**.  
   
-**Purpose:**  
-* Securely access VMs without exposing them to the internet.  
-* Protect against brute-force attacks and reduce the risk of public exposure.  
-* Simplifies connectivity management since no VPN or public IP is needed.  
+Purpose:
+Securely access VMs without exposing them to the internet.  
+Protect against brute-force attacks and reduce the risk of public exposure.  
+Simplifies connectivity management since no VPN or public IP is needed.  
   
-**Example:**  
-* VM WebServer01 has only a private IP 10.0.1.5.  
-* Using Azure Bastion, you can connect to this VM from your browser via the Azure portal without assigning a public IP to the VM.  
+Example: 
+VM WebServer01 has only a private IP 10.0.1.5.  
+Using Azure Bastion, you can connect to this VM from your browser via the Azure portal without assigning a public IP to the VM.  
   
-**Key Point:** Bastion acts like a **jump server** but fully managed and more secure.  
+Key Point: Bastion acts like a **jump server** but fully managed and more secure.  
   
 ### 10.NAT Gateway  
- **Azure NAT (Network Address Translation) Gateway** is a service that provides **outbound internet connectivity** for resources in a VNet or subnet **while keeping them private**.  
+Azure NAT (Network Address Translation) Gateway** is a service that provides **outbound internet connectivity** for resources in a VNet or subnet **while keeping them private**.  
   
-**Purpose:**  
-* Provides a **static public IP** for outbound traffic from private VMs.  
-* Enables secure, consistent outbound connections without exposing VMs with public IPs.  
-* Handles large-scale outbound connections efficiently.  
+Purpose: 
+Provides a **static public IP** for outbound traffic from private VMs.  
+Enables secure, consistent outbound connections without exposing VMs with public IPs.  
+Handles large-scale outbound connections efficiently.  
   
-**Example:**  
-* VMs in Subnet1 (private IPs 10.0.1.4 - 10.0.1.20) need to download updates from the internet.  
-* NAT Gateway assigns a public IP 52.174.56.10 for all outbound traffic.  
-* All VMs use this single public IP for outbound, but remain unreachable from the internet.  
+Example:
+VMs in Subnet1 (private IPs 10.0.1.4 - 10.0.1.20) need to download updates from the internet.  
+NAT Gateway assigns a public IP 52.174.56.10 for all outbound traffic.  
+All VMs use this single public IP for outbound, but remain unreachable from the internet.  
   
-**Key Point:** NAT Gateway is for **outbound-only connectivity**, while Bastion is for **inbound secure access**.   **Azure Pricing Calculator**  
- The **Azure Pricing Calculator** is a **web-based tool provided by Microsoft Azure** that helps estimate the **cost of using Azure services** based on your specific configurations and usage patterns. It allows you to plan budgets before deploying resources.  
+Key Point:
+NAT Gateway is for **outbound-only connectivity**, while Bastion is for **inbound secure access**.   
+
+###11.Azure Pricing Calculator**  
+The Azure Pricing Calculator is a web-based tool provided by Microsoft Azure that helps estimate the **cost of using Azure services** based on your specific configurations and usage patterns. It allows you to plan budgets before deploying resources.  
   
-**Real-Time Purpose:**  
-* Helps organizations **estimate cloud costs** before deployment.  
-* Allows comparison between different service configurations (e.g., VM sizes, storage types).  
-* Helps in **budgeting and cost optimization** by simulating real-time usage scenarios.  
-* Provides detailed cost breakdowns including region-specific pricing, reserved instances, and storage tiers.  
+Real-Time Purpose: 
+Helps organizations **estimate cloud costs** before deployment.  
+Allows comparison between different service configurations (e.g., VM sizes, storage types).  
+Helps in **budgeting and cost optimization** by simulating real-time usage scenarios.  
+Provides detailed cost breakdowns including region-specific pricing, reserved instances, and storage tiers.  
   
-**Example:**  
-* You plan to deploy:  
-    * 2 Standard DS3 v2 VMs for 1 month  
-    * 500 GB of Standard SSD Storage  
-    * Azure SQL Database for 1 year  
-* Using Azure Pricing Calculator, you select each service, configure specs, and it shows the **estimated monthly cost** (e.g., $450/month).  
+Example: 
+You plan to deploy:  
+    2 Standard DS3 v2 VMs for 1 month  
+    500 GB of Standard SSD Storage  
+    Azure SQL Database for 1 year  
+Using Azure Pricing Calculator, you select each service, configure specs, and it shows the **estimated monthly cost** (e.g., $450/month).  
   
-**Key Points:**  
-* It is **free to use** and does **not require Azure subscription**.  
-* Helps **plan and optimize cloud expenses** before deploying resources.  
-* Can export the estimate as **Excel or PDF** for budget approvals.  
+Key Points:**  
+It is **free to use** and does **not require Azure subscription**.  
+Helps **plan and optimize cloud expenses** before deploying resources.  
+Can export the estimate as **Excel or PDF** for budget approvals.  
   
-  
-##    
   
