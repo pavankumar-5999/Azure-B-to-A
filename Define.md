@@ -185,7 +185,8 @@ VNet Peering connects two VNets privately in Azure, allowing resources in each V
 * NSG outbound rule: Allow traffic from Subnet1 to 0.0.0.0/0 on port 443 (HTTPS).  
 * Restrict all other outbound traffic.  
   
-### Bastion Azure Bastion is a fully managed service that provides secure and seamless RDP/SSH connectivity to virtual machines directly through the Azure portal without exposing public IP addresses.  
+### Bastion 
+Azure Bastion is a fully managed service that provides secure and seamless RDP/SSH connectivity to virtual machines directly through the Azure portal without exposing public IP addresses.  
   
 ### Purpose:  
 * Securely access VMs without exposing them to the internet.  
