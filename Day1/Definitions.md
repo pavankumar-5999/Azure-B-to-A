@@ -20,7 +20,9 @@ Ability to quickly build, deploy, and manage resources without long delays.
 ### 9. Vertical Scaling  
 Adding more power (CPU/RAM) to an existing machine.  
 ### 10. Horizontal Scaling  
-## Adding more machines to handle more load.  B) CORE AZURE STRUCTURE (Start With These)  
+Adding more machines to handle more load.  
+
+###B) CORE AZURE STRUCTURE (Start With These)  
   
 ### 11. Resource  
 Anything you create in Azure — like a VM, storage account, network, or database.  
