@@ -1,0 +1,142 @@
+# AZ-900 Topics
+
+## 1. Cloud Concepts
+**(AZ-900 Section: Describe cloud concepts)**
+- ✔ Day 1 – Cloud basics, benefits, shared responsibility
+- ✔ Day 2 – IaaS/PaaS/SaaS, public/private/hybrid
+
+## 2. Core Azure Services
+**(AZ-900 Section: Describe core Azure services)**
+- ✔ Day 3 – Regions, zones, resource groups
+- ✔ Day 4 – Compute services (VMs, App Service, Functions, AKS)
+- ✔ Day 5 – Storage services + redundancy (LRS, ZRS, GRS)
+- ✔ Day 6 – Networking (VNet, VPN, ExpressRoute, LB, App Gateway)
+
+## 3. Security, Privacy, Compliance, Trust
+**(AZ-900 Section: Describe security and identity features)**
+- ✔ Day 7 – Azure AD, RBAC, Key Vault, Defender for Cloud, Zero Trust, Policy
+
+## 4. Azure Pricing & Support
+**(AZ-900 Section: Describe cost management and SLAs)**
+- ✔ Day 8 – Cost tools, optimization, SLAs, service lifecycles, support plans
+
+## 5. Practice & Revision
+- ✔ Day 9 – Full practice exams
+- ✔ Day 10 – Final revision + weak areas review
+
+---
+
+# Day 1 – Cloud Basics, Benefits, Shared Responsibility
+
+## 1. What is Cloud Computing?
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the internet ("the cloud").
+
+### **Key Points:**
+- Access services on-demand without physical hardware
+- No upfront investment (reduces **CAPEX**, increases **OPEX flexibility**)
+- **Pay-as-you-go** pricing
+
+### **Example:**
+Instead of buying a server, deploy a website on Azure App Service and pay only for the consumed resources.
+
+### **Cloud vs On-Premises:**
+| Feature | On-Premises | Cloud |
+|--------|-------------|--------|
+| Hardware Ownership | You own everything | Provider owns |
+| Upfront Cost | High (CAPEX) | Low (OPEX) |
+| Scalability | Limited | Elastic/Instant |
+| Maintenance | Customer | Provider |
+
+---
+
+## 2. Cloud Service Models
+
+### **A. Infrastructure as a Service (IaaS)**
+You manage: OS, applications, data  
+Provider manages: hardware, network
+
+**Example:** Azure Virtual Machines
+
+**Pros:** Flexible, scalable, full control  
+**Cons:** You handle updates & security
+
+---
+
+### **B. Platform as a Service (PaaS)**
+You manage: applications & data  
+Provider manages: OS, runtime, infrastructure
+
+**Examples:** Azure App Service, Azure SQL Database
+
+**Pros:** Less maintenance, fast deployment  
+**Cons:** Less control compared to IaaS
+
+---
+
+### **C. Software as a Service (SaaS)**
+Provider manages everything.
+
+**Examples:** Microsoft 365, Teams, Outlook
+
+**Pros:** No infrastructure to manage  
+**Cons:** Limited customization
+
+---
+
+### **D. Comparison Table**
+| Feature | IaaS | PaaS | SaaS |
+|--------|------|------|------|
+| Infrastructure | Provided | Provided | Provided |
+| OS | Customer | Provider | Provider |
+| Applications | Customer | Customer | Provided |
+| Maintenance | High | Medium | Low |
+| Examples | VMs, Storage | App Service, SQL DB | Office 365 |
+
+---
+
+## 3. Cloud Deployment Models
+
+### **A. Public Cloud**
+- Services shared across multiple customers
+- **Examples:** Azure, AWS, Google Cloud
+
+### **B. Private Cloud**
+- Used exclusively by one organization
+- On-prem or hosted
+
+### **C. Hybrid Cloud**
+- Mix of public + private
+- Example: On-prem SQL Server + Azure Backup
+
+### **D. Multi-Cloud**
+- Using more than one cloud provider
+
+---
+
+## 4. Benefits of Cloud Computing
+- **Cost Efficiency:** No upfront cost, pay-as-you-go
+- **Scalability:** Automatically scale resources
+- **Global Reach:** Deploy worldwide
+- **High Availability:** SLAs + redundancy
+- **Agility:** Rapid deployment
+- **Security:** Strong compliance & protection
+- **Innovation:** AI, ML, analytics
+
+---
+
+## 5. Shared Responsibility Model
+Defines what the cloud provider manages and what the customer manages.
+
+### **Responsibility Table**
+| Responsibility | IaaS | PaaS | SaaS |
+|----------------|------|------|------|
+| Physical Infrastructure | Provider | Provider | Provider |
+| Network & Datacenter | Provider | Provider | Provider |
+| OS & Patching | Customer | Provider | Provider |
+| Applications | Customer | Customer | Provider |
+| Data & Access | Customer | Customer | Customer |
+
+### **Key Notes:**
+- IaaS → You manage more (OS, apps)
+- PaaS → Focus on apps & data
+- SaaS → Provider manages everything
