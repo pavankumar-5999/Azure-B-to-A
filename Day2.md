@@ -1,7 +1,4 @@
-# **AZ-900 Day 2 Notes – IaaS, PaaS, SaaS & Public, Private, Hybrid Cloud**
-
-These notes are designed for **AZ-900 exam prep**, **interview preparation**, and **YouTube video script support**.
-
+# **Day 2 Notes – IaaS, PaaS, SaaS & Public, Private, Hybrid Cloud**
 ---
 
 # **1. Cloud Service Models (IaaS, PaaS, SaaS)**
