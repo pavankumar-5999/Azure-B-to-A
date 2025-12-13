@@ -1,4 +1,4 @@
-# **Day 2 Notes – IaaS, PaaS, SaaS & Public, Private, Hybrid Cloud**
+# **Day 2 – IaaS, PaaS, SaaS & Public, Private, Hybrid Cloud**
 ---
 
 # **1. Cloud Service Models (IaaS, PaaS, SaaS)**
