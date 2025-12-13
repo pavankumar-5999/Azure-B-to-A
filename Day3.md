@@ -1,4 +1,4 @@
-# **AZ-900 Day 3 – Azure Regions, Availability Zones & Resource Groups**
+# **Day 3 – Azure Regions, Availability Zones & Resource Groups**
 
 ---
 
