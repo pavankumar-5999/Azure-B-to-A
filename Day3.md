@@ -186,5 +186,3 @@ Yes, resources can be deployed across regions even if they belong to the same re
 All resources inside it get deleted.
 
 ---
-
-Let me know if you want **Day 3 diagrams**, **flashcards**, or **practice questions**!
