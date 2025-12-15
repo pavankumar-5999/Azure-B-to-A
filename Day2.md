@@ -44,6 +44,7 @@ Cloud services are divided based on **how much you manage** vs. how much the **c
 
 ---
 
+
 ## **1.2 PaaS – Platform as a Service**
 
 **Definition:** Provider delivers **runtime environment, OS, middleware, and tools**. You only deploy and manage your application.
