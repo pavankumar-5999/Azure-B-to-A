@@ -238,7 +238,7 @@ Azure Bastion is a fully managed service that provides secure and seamless RDP/S
 * Can export the estimate as **Excel or PDF** for budget approvals.   
 ### What is ExpressRoute?  
 Azure ExpressRoute is a service that provides a private, dedicated, high-bandwidth connection between your on-premises data center and Azure—not over the public internet.  
-  
+
 ### When do we use ExpressRoute?  
   
 We use ExpressRoute when we need:  
