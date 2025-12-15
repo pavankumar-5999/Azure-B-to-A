@@ -56,6 +56,7 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 
 * Production workloads requiring high availability
 * Web applications and critical VMs
+<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/0192cb11-6689-4a16-8d2a-58c3a2b27b26" />
 
 ---
 
@@ -71,6 +72,8 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 * Disaster recovery solutions
 * Regulatory compliance requiring geo-replication
 
+<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/8a6e4081-159d-4ef3-be1f-fec9e4b570f1" />
+
 ---
 
 ## **3.4 Read-Access Geo-Redundant Storage (RA-GRS)**
@@ -84,6 +87,73 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 * Global distribution of data for read-heavy apps
 
 ---
+# **AZ-900 – Geo-Zone-Redundant Storage (GZRS)**
+
+These notes explain **GZRS** in Azure and are useful for AZ-900 exam, interviews, and daily learning.
+
+---
+
+# ** What is GZRS?**
+
+**GZRS (Geo-Zone-Redundant Storage)** combines the benefits of **ZRS (Zone-Redundant Storage)** and **GRS (Geo-Redundant Storage)**. It ensures:
+
+* Data is **replicated across multiple Availability Zones** within the primary region (like ZRS).
+* Data is **asynchronously replicated to a secondary region** (like GRS).
+* Provides **high durability, high availability, and disaster recovery**.
+
+---
+
+# **2. Key Features**
+
+* Combines **zone-level redundancy** with **geo-replication**.
+* Protects against:
+
+  * Datacenter failures in primary region
+  * Regional disasters
+* Data is **readable only from the primary region** by default.
+* Can be paired with **RA-GZRS** for read access from secondary region.
+
+---
+
+# **3. Use Cases**
+
+* Business-critical applications that need **high availability and disaster recovery**.
+* Applications that require **zone-level fault tolerance** and **cross-region replication**.
+* Compliance scenarios requiring **geographically separate copies** of data.
+
+---
+
+# **4. Comparison with Other Redundancy Options**
+
+| Storage Type | Replication                         | Protection Level                                 |
+| ------------ | ----------------------------------- | ------------------------------------------------ |
+| LRS          | 3 copies in single datacenter       | Protects against hardware failure only           |
+| ZRS          | 3 copies across zones in a region   | Protects against datacenter failure              |
+| GRS          | LRS + replicate to secondary region | Protects against regional disaster               |
+| **GZRS**     | ZRS + replicate to secondary region | Protects against datacenter & regional disasters |
+
+---
+
+# **5. AZ-900 Exam Tips**
+
+* GZRS = **ZRS + GRS** combination
+* Provides **maximum durability** for critical workloads
+* Paired with **RA-GZRS** for read access from secondary region
+* Choose GZRS when **cost is less critical** than **availability & disaster protection**
+
+---
+
+# **6. TL;DR**
+
+* **GZRS** = Zone-redundant + Geo-redundant storage
+* **Protects against datacenter and regional failures**
+* Use for **business-critical, high-availability apps**
+* Optional: **RA-GZRS** for read access from secondary region
+
+---
+
+<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/f50c77f9-cf76-4255-a038-0df6ce61a5be" />
+
 
 # **4. Azure Storage Pricing Factors**
 
