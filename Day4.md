@@ -15,6 +15,7 @@ Azure Compute services provide **on-demand computing resources** such as virtual
 
 # **2. Azure Virtual Machines (VMs)**
 
+
 ## **2.1 What is an Azure Virtual Machine?**
 
 An Azure Virtual Machine (VM) is an **Infrastructure as a Service (IaaS)** offering that lets you run a virtualized operating system in the cloud.
@@ -229,5 +230,4 @@ AKS simplifies deployment and management of containerized applications using Kub
 * Azure Functions = Serverless, event-based
 * AKS = Managed Kubernetes for containers
 * Choose service based on control vs management needs
-
 ---
