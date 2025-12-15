@@ -1,6 +1,7 @@
 # **Day 5 – Azure Storage Services and Redundancy**
 ---
 
+
 # **1. Introduction to Azure Storage**
 
 Azure Storage provides **durable, highly available, and scalable cloud storage** for a wide variety of data types, including objects, files, disks, and queues.
