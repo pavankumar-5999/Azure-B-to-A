@@ -1,6 +1,4 @@
 # **Day 5 – Azure Storage Services and Redundancy**
-
-These notes cover **Azure Storage services and data redundancy options** and are designed for:
 ---
 
 # **1. Introduction to Azure Storage**
