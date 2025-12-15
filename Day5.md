@@ -42,6 +42,8 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 * Non-critical data
 * Test and dev environments
 
+<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/8f430383-77ba-4f48-b5ab-a7158dac70a3" />
+
 ---
 
 ## **3.2 Zone-Redundant Storage (ZRS)**
