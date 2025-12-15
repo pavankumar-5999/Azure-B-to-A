@@ -65,7 +65,6 @@ A zone is a **physically separate location** within a region.
 ### **Why It Matters?**
 
 If one zone fails (power outage, fire), the other zones continue running.
-
 ---
 
 ## **2.2 Types of Azure Services Using Zones**
@@ -129,7 +128,6 @@ A container for resources deployed to Azure.
 * Delete entire environments in one click through RG deletion.
 
 ---
-
 # **4. Comparison Tables**
 
 ## **4.1 Region vs. Zone**
