@@ -56,7 +56,7 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 
 * Production workloads requiring high availability
 * Web applications and critical VMs
-<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/0192cb11-6689-4a16-8d2a-58c3a2b27b26" />
+<img width="944" height="233" alt="Screenshot 2025-12-15 at 20 38 58" src="https://github.com/user-attachments/assets/275dc44a-d238-47f9-b2ed-b1b0433402f4" />
 
 ---
 
@@ -71,8 +71,8 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 * Business-critical applications
 * Disaster recovery solutions
 * Regulatory compliance requiring geo-replication
-
-<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/8a6e4081-159d-4ef3-be1f-fec9e4b570f1" />
+  
+<img width="944" height="233" alt="Screenshot 2025-12-15 at 20 39 46" src="https://github.com/user-attachments/assets/8ff450a7-0829-4bd4-8962-859ad63896e1" />
 
 ---
 
@@ -115,8 +115,9 @@ Redundancy ensures **data durability** by replicating data across multiple locat
 * Business-critical applications that need **high availability and disaster recovery**.
 * Applications that require **zone-level fault tolerance** and **cross-region replication**.
 * Compliance scenarios requiring **geographically separate copies** of data.
-* 
-<img width="808" height="226" alt="Screenshot 2025-12-15 at 20 35 45" src="https://github.com/user-attachments/assets/f50c77f9-cf76-4255-a038-0df6ce61a5be" />
+  
+<img width="944" height="233" alt="Screenshot 2025-12-15 at 20 40 41" src="https://github.com/user-attachments/assets/f13cdce9-430a-4b82-b8df-134ae4164aeb" />
+
 ---
 
 # **Comparison with Other Redundancy Options**
