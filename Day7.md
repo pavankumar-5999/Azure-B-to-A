@@ -105,3 +105,40 @@ Service to **enforce organizational standards**.
 * Key Vault = secrets
 * Defender = security posture
 * Policy = governance
+# **Interview Questions & Answers (Day 7)**
+
+### **Q1: What is Azure Active Directory?**
+
+Azure AD is a cloud-based identity and access management service used for authentication, authorization, and Single Sign-On.
+
+### **Q2: What is the difference between RBAC and Azure Policy?**
+
+RBAC controls who can access Azure resources, while Azure Policy controls what configurations are allowed.
+
+### **Q3: Why do we use Azure Key Vault?**
+
+Azure Key Vault securely stores secrets, keys, and certificates and controls access using Azure AD.
+
+### **Q4: What is Microsoft Defender for Cloud?**
+
+It helps improve security posture, provides recommendations, and protects against threats.
+
+### **Q5: Explain Zero Trust in simple terms.**
+
+Never trust by default, always verify identity, and grant least-privilege access.
+
+### **Q6: What does Azure Policy do?**
+
+Azure Policy enforces organizational standards and compliance rules.
+
+---
+
+# **Quick Reference (Day 7)**
+
+* Azure AD → Identity & authentication
+* RBAC → Permissions & access control
+* Key Vault → Secrets & certificates
+* Defender for Cloud → Security posture & threats
+* Zero Trust → Verify always, least privilege
+* Azure Policy → Governance & compliance
+---
