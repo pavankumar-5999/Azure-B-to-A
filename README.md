@@ -44,15 +44,17 @@ AZ-900/
 
 ## 🧠 Day-wise Learning Plan
 
-| Day    | Topic                                                       |
-| ------ | ----------------------------------------------------------- |
-| Day 1  | Cloud Basics, Benefits, Shared Responsibility               |
-| Day 2  | IaaS, PaaS, SaaS & Deployment Models                        |
-| Day 3  | Azure Regions, Availability Zones, Resource Groups          |
-| Day 4  | Azure Compute Services (VMs, App Service, Functions, AKS)   |
-| Day 5  | Azure Storage Services & Redundancy (LRS, ZRS, GRS, GZRS)   |
-| Day 6  | Azure Networking (VNet, VPN, ExpressRoute, LB, App Gateway) |
-| Day 7+ | Identity, Security, Pricing & Governance *(Coming soon)*    |
+| Day    | Topic                                                              |
+| ------ | ------------------------------------------------------------------ |
+| Day 1  | Cloud Basics, Benefits, Shared Responsibility                      |
+| Day 2  | IaaS, PaaS, SaaS & Deployment Models                               |
+| Day 3  | Azure Regions, Availability Zones, Resource Groups                 |
+| Day 4  | Azure Compute Services (VMs, App Service, Functions, AKS)          |
+| Day 5  | Azure Storage Services & Redundancy (LRS, ZRS, GRS, GZRS)          |
+| Day 6  | Azure Networking (VNet, VPN, ExpressRoute, LB, App Gateway)        |
+| Day 7  | Identity, Security, Pricing & Governance                           |
+| Day 8  | Cost tools, optimization, SLAs, service lifecycles, support plans  |
+| Day 9  | Final revision quick tldr for AZ-900 it should be like cheat code  |
 
 ---
 
