@@ -63,17 +63,6 @@ AZ-900/
 * ✅ Help with **Azure interview preparation**
 * ✅ Provide **beginner-friendly documentation**
 * ✅ Share knowledge with the Azure community
-
----
-
-## 🛠️ Tools Used
-
-* Visual Studio Code (Markdown)
-* GitHub
-* Azure Portal (for learning)
-* macOS Screen Recording
-* AI Voice Tools (for narration)
-
 ---
 
 ## 🤝 Contributing
