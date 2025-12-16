@@ -71,3 +71,42 @@ Guarantee of uptime expressed as a percentage.
 * Calculator before deploy
 * Cost Management after deploy
 * SLA ≠ combined
+
+
+# **Interview Questions & Answers (Day 8)**
+
+### **Q1: What tools are used to estimate Azure cost before deployment?**
+
+Azure Pricing Calculator and TCO Calculator.
+
+### **Q2: Which tool is used to monitor Azure spending after deployment?**
+
+Azure Cost Management.
+
+### **Q3: What is an SLA?**
+
+A Service Level Agreement defines guaranteed uptime for an Azure service.
+
+### **Q4: Can SLAs be combined across services?**
+
+No, SLAs are not cumulative; each service has its own SLA.
+
+### **Q5: What are Azure support plans?**
+
+Different support tiers (Basic, Developer, Standard, Professional Direct) offering varying response times and services.
+
+### **Q6: What is the Azure service lifecycle?**
+
+Preview → General Availability → Deprecated.
+
+---
+
+# **Quick Reference (Day 8)**
+
+* Pricing Calculator → Cost estimation (before)
+* TCO Calculator → On‑prem vs Azure comparison
+* Cost Management → Track & optimize costs
+* SLA → Uptime guarantee
+* Support Plans → Help & response times
+* Lifecycle → Preview → GA → Deprecated
+
