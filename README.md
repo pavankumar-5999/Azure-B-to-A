@@ -66,14 +66,6 @@ AZ-900/
 
 ---
 
-## 🎥 YouTube Series (Optional)
-
-I am also creating a **day-wise AZ-900 YouTube series** based on these notes.
-
-📺 *Link will be added soon*
-
----
-
 ## 🛠️ Tools Used
 
 * Visual Studio Code (Markdown)
